@@ -11,10 +11,6 @@
       "basePath": "Legacy_LampControl/",
       "descriptionFile": "Description.json",
       "toolboxCategory": "Beckhoff.TwinCAT.HMI:202"
-    },
-    {
-      "type": "Resource",
-      "path": "/Legacy_LampControl/Images/element-lamp-lamp1-yellow-off.svg"
     }
   ],
   "provideMetadata": {

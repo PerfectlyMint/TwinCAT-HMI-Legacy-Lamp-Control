@@ -54,6 +54,8 @@ module TcHmi {
                  */
                 public __init() {
                     super.__init();
+                    this.__processValue();
+
                 }
 
                 /**
@@ -62,7 +64,7 @@ module TcHmi {
                 */
                 public __attach() {
                     super.__attach();
-
+                    this.__processValue();
                     /**
                      * Initialize everything which is only available while the control is part of the active dom.
                      */
@@ -128,7 +130,7 @@ module TcHmi {
                 * Sets the value of Value
                 * @param valueNew The new value for Value
                 */
-                public setColor(valueNew: string | undefined) {
+                public setLampColor(valueNew: string | undefined) {
                     this.__color = valueNew;
                     this.__processColor();
                 }
@@ -137,60 +139,72 @@ module TcHmi {
                  * Gets the value of Responsive
                  * @returns The current value of Value
                  */
-                getColor(): string | undefined {
+                getLampColor(): string | undefined {
                     return this.__color;
-                    this.__processColor();
                 }
                 /**
                  * Processes Value
                  */
                 protected __processColor(): void {
-                    let lampElement = this.__lampElement.find("img")[0];
+                    
+                    let lampElement = this.__elementTemplateRoot.find
+                        ('div')[0];
+                    if (this.__value === null || this.__color === "null") {
+                        lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-yellow-off';
+                        return;
+                    }
                     switch (this.__color) {
                         case "Red": {
                             if (this.__value === true) {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-red-off.svg" 
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-red-on';
                             } else {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-red-off.svg" 
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-red-off'
                             }
+                            break;
                         }
                         case "Green": {
                             if (this.__value === true) {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-green-on.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-green-on'
                             } else {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-green-off.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-green-off'
                             }
+                            break;
                         }
                         case "Blue": {
                             if (this.__value === true) {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-blue-on.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-blue-on'
                             } else {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-blue-off.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-blue-off'
                             }
+                            break;
                         }
                         case "Grey": {
                             if (this.__value === true) {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-grey-on.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-grey-on'
                             } else {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-grey-off.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-grey-off'
                             }
+                            break;
                         }
                         case "Yellow": {
                             if (this.__value === true) {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-yellow-on.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-yellow-on'
                             } else {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-yellow-off.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-yellow-off'
                             }
+                            break;
                         }
                         default: {
                             if (this.__value === true) {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-yellow-on.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-yellow-on'
                             } else {
-                                lampElement.src = "Legacy_LampControl/Images/element-lamp-lamp1-yellow-off.svg"
+                                lampElement.className = 'TcHmi_Controls_Legacy_Lamp_Legacy_LampControl-yellow-off'
                             }
+                            break;
                         }
 
-                    } 
+                    }
+                    return;
                 }
             }
         }
