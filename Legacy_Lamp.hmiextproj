@@ -60,36 +60,6 @@
     <Content Include="Legacy_LampControl\Buttons.css">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-blue-off.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-blue-on.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-gray-off.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-gray-on.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-green-off.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-green-on.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-red-off.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-red-on.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-yellow-off.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Legacy_LampControl\Images\element-lamp-lamp1-yellow-on.svg">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="tsconfig.tpl.json">
       <SubType>Content</SubType>
       <Visible>true</Visible>
@@ -127,7 +97,6 @@
     <Folder Include="Legacy_LampControl\" />
     <Folder Include="Legacy_LampControl\Icons\" />
     <Folder Include="Legacy_LampControl\Images" />
-    <Folder Include="Legacy_LampControl\NewFolder1\" />
     <Folder Include="Legacy_LampControl\Schema\" />
     <Folder Include="Legacy_LampControl\Themes\" />
     <Folder Include="Legacy_LampControl\Themes\Base\" />

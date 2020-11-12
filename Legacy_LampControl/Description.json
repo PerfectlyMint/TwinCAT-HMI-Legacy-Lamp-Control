@@ -55,6 +55,11 @@
       "name": "Style.css",
       "type": "Stylesheet",
       "description": "Theme independent style"
+    },
+    {
+      "name": "Buttons.css",
+      "type": "Stylesheet",
+      "description": "Button Styles"
     }
   ],
   "themes": {
@@ -87,6 +92,25 @@
       "heritable": true,
       "defaultValue": null,
       "defaultValueInternal": true
+    },
+    {
+      "name": "data-tchmi-lamp-color",
+      "propertyName": "Value",
+      "propertySetterName": "setLampColor",
+      "propertyGetterName": "getLampColor",
+      "displayName": "Value",
+      "visible": true,
+      "themeable": "Standard",
+      "displayPriority": 20,
+      "type": "tchmi:framework#/definitions/TcHmi.Controls.Legacy_Lamp.Legacy_LampColor",
+      "category": "Common",
+      "description": "Lamp value.",
+      "readOnly": false,
+      "bindable": true,
+      "defaultBindingMode": "OneWay",
+      "heritable": true,
+      "defaultValue": "Yellow",
+      "defaultValueInternal": "Yellow"
     }
   ],
   "attributeCategories": [],

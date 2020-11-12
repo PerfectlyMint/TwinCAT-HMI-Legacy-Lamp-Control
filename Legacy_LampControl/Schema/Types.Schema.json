@@ -7,8 +7,10 @@
       "frameworkControlType": "Legacy_LampControl",
       "frameworkControlNamespace": "TcHmi.Controls.Legacy_Lamp"
     },
-    "TcHmi.Controls.Legacy_Lamp.Legacy_LampColor" : {
-      "description": "LampColor",
+    "TcHmi.Controls.Legacy_Lamp.Legacy_LampColor": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "LampColor",
+      "type": "string",
       "enum": [
         "Red",
         "Green",
@@ -16,8 +18,7 @@
         "Yellow",
         "Grey"
       ],
-      "title": "LampColor",
-      "id": "tchmi:project#/definitions/LampColor"
+      "default": "Yellow"
     }
   }
 }

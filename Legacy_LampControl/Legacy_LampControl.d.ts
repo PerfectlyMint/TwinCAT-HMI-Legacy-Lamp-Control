@@ -57,12 +57,12 @@ declare module TcHmi {
                 * Sets the value of Value
                 * @param valueNew The new value for Value
                 */
-                setColor(valueNew: string | undefined): void;
+                setLampColor(valueNew: string | undefined): void;
                 /**
                  * Gets the value of Responsive
                  * @returns The current value of Value
                  */
-                getColor(): string | undefined;
+                getLampColor(): string | undefined;
                 /**
                  * Processes Value
                  */
