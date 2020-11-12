@@ -1,0 +1,23 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.Legacy_Lamp.Legacy_LampControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "Legacy_LampControl",
+      "frameworkControlNamespace": "TcHmi.Controls.Legacy_Lamp"
+    },
+    "TcHmi.Controls.Legacy_Lamp.Legacy_LampColor" : {
+      "description": "LampColor",
+      "enum": [
+        "Red",
+        "Green",
+        "Blue",
+        "Yellow",
+        "Grey"
+      ],
+      "title": "LampColor",
+      "id": "tchmi:project#/definitions/LampColor"
+    }
+  }
+}
