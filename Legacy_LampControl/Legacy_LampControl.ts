@@ -47,6 +47,7 @@ module TcHmi {
                     }
                     // Call __previnit of base class
                     super.__previnit();
+                    
                 }
                 /** 
                  * @description Is called during control initialize phase after attribute setter have been called based on it's default or initial html dom values. 

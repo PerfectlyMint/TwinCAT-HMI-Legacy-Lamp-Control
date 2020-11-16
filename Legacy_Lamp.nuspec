@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Legacy_Lamp</id>
-    <version>1.0.0</version>
-    <title>Legacy_Lamp</title>
-    <authors>OlliM</authors>
-    <owners>OlliM</owners>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <version>1.0.1</version>
+    <title>Legacy Lamp</title>
+    <authors>Perfectly Mint</authors>
+    <owners>Perfectly Mint</owners>
+    <projectUrl>https://github.com/PerfectlyMint/TwinCAT-HMI-Legacy-Lamp-Control</projectUrl>
     <license type="expression">MIT</license>
-    <icon>images/logo.png</icon>
+    <icon>images/lamp.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>-.-</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>An example code for TwinCAT HMI Framework extension. Produces the good ol' visualization lamp control.</description>
+    <releaseNotes>Fixes on labels.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>TwinCAT HMI</tags>
     <dependencies>
@@ -25,5 +25,6 @@
           target="runtimes\native1.12-tchmi\"
           exclude="**\*.nuspec;**\*.tpl.json;**\*.hmi*proj;**\~*;**\*.tmp;**\tmp*;**\*.user;**\tsconfig.json;**\*.log;**\*.bak;**\obj\**\*;packages.config;packages.xsd;.hmiframework\**\*;.git;.gitignore;.gitattributes" />
     <file src="images\logo.png" target="images\" />
+    <file src="images\lamp.png" target="images\" />
   </files>
 </package>
